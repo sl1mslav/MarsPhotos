@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">14HW</string>
+    <string name="update_button_text">UPDATE</string>
+    <string name="error_message">Sorry! Something has gone wrong. Please, check your internet connection and press the update button again.</string>
+    <string name="rover_name">Rover: %1$s</string>
+    <string name="camera_name">Camera: %1$s</string>
+    <string name="sol_amount">Sol: %1$d</string>
+    <string name="earth_date">Date: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
