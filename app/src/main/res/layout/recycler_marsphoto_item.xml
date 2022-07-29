@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginBottom="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:transitionName="shared_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/fullscreen_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fullscreen_fill0_wght400_grad0_opsz48"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/dark_background"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@color/gray_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/rover_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/rover_name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/dark_background"
+        app:layout_constraintTop_toTopOf="@+id/dark_background" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/camera_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/camera_name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/dark_background"
+        app:layout_constraintBottom_toBottomOf="@+id/dark_background"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sol_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/sol_amount"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/dark_background"
+        app:layout_constraintTop_toTopOf="@+id/dark_background"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/earth_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/earth_date"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/dark_background"
+        app:layout_constraintBottom_toBottomOf="@+id/dark_background"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
